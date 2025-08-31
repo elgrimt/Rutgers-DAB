@@ -1,0 +1,62 @@
+#!/usr/bin/env python
+# coding: utf-8
+
+# In[46]:
+
+
+#Task 1: Variable Declaration and Data Types
+# Mets Players and Number of hits
+Player_Last_Names =['Soto', 'Lindor', 'Alosno', 'Nimmo']
+Player_Hits = [120, 130, 140, 150]
+print(Player_Last_Names)
+print(Player_Hits)
+
+
+#Task 2: String Manipulation
+# Create a string variable
+player_bios = "Brandon Nimmo is leading team in hits"
+print(player_bios.upper())    
+print(player_bios.lower())      
+print(player_bios.title())      
+
+#Task 3: Basic Operations
+# Arithmic
+a = 130
+b = 120
+print("Lindor plus Soto hits:", a + b)
+print("Lindor minus Soto hits:", a - b)
+print("Lindor time Soto hits:", a * b)
+print("Lindor divide Soto hits:", a / b)
+print("Modulus:", a % b)
+print("Exponent:", a ** b)
+# Comparison 
+print("Lindor hits > Soto hits:", a > b)
+print("Lindor hits < Soto hits:", a < b)
+print("Lindor hits == Soto hits:", a == b)
+print("Lindor hits != Soto hits:", a != b)
+print("Lindor hits >= Soto hits:", a >= b)
+print("Lindor hits <= Soto hits:", a <= b)
+#Logical 
+x = True
+y = False
+print("Did Lindor get more hits than both Soto and Alonso:", y)
+print("Did Alonso get fewer hits than Nimmo OR Soto?:", x or y)
+print("It it not true that Soto had more hits than Nimmo:", not x)
+
+# Task 4: Data Collections
+
+# List Example
+Player_Names = ["Soto", "Lindor", "Alonso", "Nimmo"]
+print("Names", Player_Names)
+print("4th player in List:", Player_Names[3])
+# Dictionary Example
+Player_Stats = {"Soto": 120,"Lindor": 130,"Alonso": 140,"Nimmo": 150}
+print("Dictionary Example:", Player_Stats)
+print("Access Lindor:", Player_Stats["Lindor"]) 
+
+
+# In[ ]:
+
+
+
+
