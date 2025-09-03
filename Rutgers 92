@@ -1,0 +1,40 @@
+# Task 1: Basic if Statement
+number_of_hits = 50
+if number_of_hits >= 50:
+    print("Good player")
+
+# Task 2: if-else Statement 
+number = 5
+if number >= 0 :
+    print("Positive")
+else: 
+    print("Negative")
+
+# Task 3: if-elif-else Statement
+grade = 75
+if grade >= 90 and grade <= 100:
+    print("A")
+elif grade >= 80 and grade <= 89:
+    print("B")
+elif grade >= 70 and grade <= 79:
+    print("C")
+elif grade >= 60 and grade <= 69:
+    print("D")
+else:
+    print("F")
+
+# Task 4: Nested Conditionals
+student = True
+athlete = True
+if student:
+    if athlete:
+        print("Student Athlete")
+if student:
+    if not athlete:
+        print("Not Student Athlete")
+
+#Task 5: Ternary Operator
+def even_odd(number):
+    return "Even" if number % 2 == 0 else "Odd"
+print(even_odd(1))
+print(even_odd(2))
