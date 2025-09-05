@@ -1,0 +1,32 @@
+# Exercise 1: Lists and Dictionaries
+#1
+shopping_list = ["Cake", "Brownie", "Cookie", "Pie", "Yogurt"]
+print (shopping_list)
+
+#2
+print ("Third Item:",shopping_list[2])
+
+#3
+shopping_list.insert(0, "Cereal")
+print (shopping_list)
+
+#4
+shopping_list.append("Ice Cream")
+print (shopping_list)
+
+#5
+shopping_list = {"Cereal" : "5", "Cake" : "4", "Cookie" : "3"}
+print(shopping_list)
+
+#6
+print(shopping_list["Cake"])
+print(shopping_list["Cereal"])
+print(shopping_list["Cookie"])
+
+#7
+shopping_list["Brownie"] = "2"
+print(shopping_list)
+
+#8
+print("Cost:", sum(int(price) for price in shopping_list.values()))    #Int will give whole numbers
+                                                                       #Float will give decimals
