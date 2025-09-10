@@ -1,0 +1,222 @@
+# Part 1: Conditional Statements
+number = 0
+if number > 0 :
+    print("Positive")
+elif number < 0 :
+    print("Negative")
+else:
+    print("Zero")
+
+
+
+# Exercise 1: Grade Calculator
+grade = [95,82,71,65,55]
+for grade in grade:
+    if grade >= 90 and grade <= 100:
+        print(f"Grade {grade}: A")
+    elif grade >= 80 and grade <= 89:
+        print(f"Grade {grade}: B")
+    elif grade >= 70 and grade <= 79:
+        print(f"Grade {grade}: C")
+    elif grade >= 60 and grade <= 69:
+        print(f"Grade {grade}: D")
+    else:
+        print(f"Grade {grade}: F")
+
+
+
+#Exercise #2: Discount Calculator
+purchase_amounts = [50, 150, 600, 1200]
+def calculate_discount(purchase_amount):
+    if purchase_amount >= 1000:
+        discount = 0.70   # pay 70% of the price
+    elif purchase_amount >= 500:
+        discount = 0.80   # pay 80%
+    elif purchase_amount >= 100:
+        discount = 0.90   # pay 90%
+    else:
+        discount = 1.00   # no discount, pay full price
+
+    final_price = purchase_amount * discount
+    return final_price
+for amount in purchase_amounts:
+    print(f"${amount}, Discount price: ${calculate_discount(amount):.2f}")
+
+
+
+#Part 2: Functions
+def greet(first_name_and_title):
+    print("Thomas is a Data Analyst")
+greet("first_name_and_title")
+
+
+
+#Exercise 3: Temperature Converter
+def cel_to_fahr(cel):
+    return cel * 9/5 +32
+print (cel_to_fahr(20), "Degrees Fahrenheit")
+
+
+
+#Exercise 4: Calculator Function
+def calculator(num1, num2, formula):
+    if formula == "addition":
+        return num1 + num2
+    elif formula == "subtraction":
+        return num1 - num2
+    elif formula == "multiplication":
+        return num1 * num2
+    elif formula == "division":
+        if num2 == 0:
+            return "Error"
+        return num1 / num2
+    else:
+        return "Error: Invalid operation"
+
+print(calculator(11, 5, "addition"))
+print(calculator(10, 5, "subtraction"))
+print(calculator(10, 5, "multiplication")) 
+print(calculator(10, 5, "division"))
+print(calculator(10, 0, "division"))
+
+
+
+#Part 3: Lists
+fruits = ["Apple", "Banana", "Cherry", "Date"]
+print("List:", fruits)
+
+print("First item is", fruits[0])
+print("Last item is", fruits[-1])
+
+fruits[2] = "Blueberry"
+print("Update List:", fruits)
+
+fruits.append("Mango")
+print("After item added:", fruits)
+
+fruits.remove("Apple")
+popped = fruits.pop()
+print("Final List:", fruits)
+
+
+
+#Exercise 5: List Statistics
+numbers = [5, 12, 8, 42, 23, 16]
+def calculate_statistics(numbers):
+    return {"minimum": min(numbers), "maximum": max(numbers),"average": sum(numbers) / len(numbers), "sum of all": sum(numbers)}
+stats = calculate_statistics(numbers)
+print(stats)
+
+
+
+#Exercise 6: List Filtering
+def filter_out_even_numbers(numbers):
+    return [num for num in numbers if num % 2 == 0]
+numbers = [1,2,3,4,5,6,7,8,9,10]
+print(filter_out_even_numbers(numbers))
+
+
+
+#Part 4: Dictionaries
+student = {"Name": "Thomas","Age": 22, "Grade": "A"}
+print(student)
+print("Name", student["Name"])
+student["Major"] = "Sports Management"
+print("Updated Info:", student)
+removed_age = student.pop("Age")
+print(f"Removed age: {removed_age}, Updated student {student}")
+
+
+
+#Exercise 7: Word Counter
+def count_words(text):
+    text = text.lower()
+    words = text.split()
+    return dict(Counter(words))  # Count occurrences and convert to dictionary
+text = "The mets are going to win the world series this year."
+word_counts = count_words(text)
+print("Word counts:", word_counts)
+
+
+
+#Exercise 8: Contact Manager
+contact_book = {}
+def add_contact(name, phone, email=None):
+    contact_book[name] = {"phone #": phone, "email address": email}
+    return f"Contact {name} added."
+
+def update_contact(name, phone=None, email=None):
+    if name in contact_book:
+        if phone: contact_book[name]["phone"] = phone
+        if email: contact_book[name]["email"] = email
+        return f"Contact {name} updated."
+    return f"Contact {name} not found."
+print(add_contact("Thomas", "1234-567", "thomas@mail.com"))
+print(add_contact("Tom", "765-4321"))
+print(get_contact("Thomas"))
+print(update_contact("Thomas", email="thomas@email.com"))
+print(get_contact("Megan"))
+
+
+
+#Part 5: Loops
+sports = ["Baseball", "Football", "Basketball", "Hockey"]
+print("looping through sports:")
+for list in sports:
+    print(list)
+print("Looping with indexes:")
+for index  in range(len(sports)):
+    print(index)
+
+
+
+#Exercise 9: Factorial Calculator
+def factorial(n):
+    result = 2
+    for i in range(2, n + 1):
+        result *= i
+    return result
+for num in range(5):
+    print(f"Factor of {num} = {factorial(num)}")
+
+
+
+#Exercise 10: Data Analysis
+students_info = [{"name": "Alice", "scores": [88, 92, 95, 85]},{"name": "Bob", "scores": [90, 87, 88, 81]},{"name": "Charlie", "scores": [92, 95, 96, 93]}, {"name": "David", "scores": [78, 85, 91, 89]}]
+def student_scores(students):
+    return {s["name"]: {"average": sum(s["scores"]) / len(s["scores"]),"min": min(s["scores"]),"max": max(s["scores"])} for s in students}
+results = student_scores(students_info)
+for name, stats in analysis.items():
+    print(f"{name}: {stats}")
+
+
+
+ #Final Challenge
+from collections import defaultdict
+sales_data = [{"month": "January", "category": "Electronics", "amount": 1200},
+    {"month": "January", "category": "Books", "amount": 850},
+    {"month": "January", "category": "Clothing", "amount": 980},
+    {"month": "February", "category": "Electronics", "amount": 1450},
+    {"month": "February", "category": "Books", "amount": 920},
+    {"month": "February", "category": "Clothing", "amount": 1050},
+    {"month": "March", "category": "Electronics", "amount": 1600},
+    {"month": "March", "category": "Books", "amount": 780},
+    {"month": "March", "category": "Clothing", "amount": 1200}]
+def analyze_sales(sales):
+    monthly = defaultdict (int)
+    category = defaultdict (int)
+    for s in sales:
+        monthly[s["month"]] += s["amount"]
+        category[s["category"]] += s["amount"]
+    return {
+        "monthly_sales": dict(monthly),
+        "category_sales": dict(category),
+        "best_month": max(monthly, key=monthly.get),
+        "best_category": max(category, key=category.get),
+        "total_sales": sum(s["amount"] for s in sales)}
+analysis = analyze_sales(sales_data)
+print("Totals for Monthly:", analysis["monthly_sales"])
+print("Totals for Category:", analysis["category_sales"])
+print("Top Month:", analysis["best_month"])
+print("Top Category:", analysis["best_category"])
+print("Total Sales:", analysis["total_sales"])
