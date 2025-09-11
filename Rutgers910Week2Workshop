@@ -220,3 +220,66 @@ print("Totals for Category:", analysis["category_sales"])
 print("Top Month:", analysis["best_month"])
 print("Top Category:", analysis["best_category"])
 print("Total Sales:", analysis["total_sales"])
+
+
+ANSWERS:
+Zero
+Grade 95: A
+Grade 82: B
+Grade 71: C
+Grade 65: D
+Grade 55: F
+$50, Discount price: $50.00
+$150, Discount price: $135.00
+$600, Discount price: $480.00
+$1200, Discount price: $840.00
+Thomas is a Data Analyst
+68.0 Degrees Fahrenheit
+16
+5
+50
+2.0
+Error
+List: ['Apple', 'Banana', 'Cherry', 'Date']
+First item is Apple
+Last item is Date
+Update List: ['Apple', 'Banana', 'Blueberry', 'Date']
+After item added: ['Apple', 'Banana', 'Blueberry', 'Date', 'Mango']
+Final List: ['Banana', 'Blueberry', 'Date']
+{'minimum': 5, 'maximum': 42, 'average': 17.666666666666668, 'sum of all': 106}
+[2, 4, 6, 8, 10]
+{'Name': 'Thomas', 'Age': 22, 'Grade': 'A'}
+Name Thomas
+Updated Info: {'Name': 'Thomas', 'Age': 22, 'Grade': 'A', 'Major': 'Sports Management'}
+Removed age: 22, Updated student {'Name': 'Thomas', 'Grade': 'A', 'Major': 'Sports Management'}
+Word counts: {'the': 2, 'mets': 1, 'are': 1, 'going': 1, 'to': 1, 'win': 1, 'world': 1, 'series': 1, 'this': 1, 'year.': 1}
+Contact Thomas added.
+Contact Tom added.
+{'phone #': '1234-567', 'email address': 'thomas@mail.com'}
+Contact Thomas updated.
+Contact Megan not found
+looping through sports:
+Baseball
+Football
+Basketball
+Hockey
+Looping with indexes:
+0
+1
+2
+3
+Factor of 0 = 2
+Factor of 1 = 2
+Factor of 2 = 4
+Factor of 3 = 12
+Factor of 4 = 48
+monthly_sales: {'January': 3030, 'February': 3420, 'March': 3580}
+category_sales: {'Electronics': 4250, 'Books': 2550, 'Clothing': 3230}
+best_month: March
+best_category: Electronics
+total_sales: 10030
+Totals for Monthly: {'January': 3030, 'February': 3420, 'March': 3580}
+Totals for Category: {'Electronics': 4250, 'Books': 2550, 'Clothing': 3230}
+Top Month: March
+Top Category: Electronics
+Total Sales: 10030
