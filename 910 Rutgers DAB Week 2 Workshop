@@ -29,13 +29,13 @@ for grade in grade:
 purchase_amounts = [50, 150, 600, 1200]
 def calculate_discount(purchase_amount):
     if purchase_amount >= 1000:
-        discount = 0.70   # pay 70% of the price
+        discount = 0.70   
     elif purchase_amount >= 500:
-        discount = 0.80   # pay 80%
+        discount = 0.80   
     elif purchase_amount >= 100:
-        discount = 0.90   # pay 90%
+        discount = 0.90   
     else:
-        discount = 1.00   # no discount, pay full price
+        discount = 1.00 
 
     final_price = purchase_amount * discount
     return final_price
@@ -132,7 +132,7 @@ print(f"Removed age: {removed_age}, Updated student {student}")
 def count_words(text):
     text = text.lower()
     words = text.split()
-    return dict(Counter(words))  # Count occurrences and convert to dictionary
+    return dict(Counter(words))
 text = "The mets are going to win the world series this year."
 word_counts = count_words(text)
 print("Word counts:", word_counts)
